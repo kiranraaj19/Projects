@@ -1,0 +1,4 @@
+In this program, user is asked to input email and password.
+password is asked to retype for safety.
+if the retyped password doesnt match, it shows an error.
+if successful registration, then the information is saved in a loginsys text file(hackerstyle)
