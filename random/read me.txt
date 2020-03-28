@@ -1,2 +1,3 @@
 In this program a turtle moves forward each step by a random number.
 it finally outputs the number of steps it took to cross 333 in a steps text file
+user can use this like a event-decider like tossing a coin
