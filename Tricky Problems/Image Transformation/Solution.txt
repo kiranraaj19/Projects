@@ -5,10 +5,11 @@ old_matrix = [[int(input()) for i in range(n)] for j in range(n)]
 matrix = np.array(old_matrix)
 
 print(matrix)
+#flips matrix anticlockwise
 def flip(a):
     return a.transpose().transpose().transpose()
 
-
+#recursive function to output transformed matrix
 def image_transform(a, start, li):
     li.append(a[0][0])
     if a[2][0] != li[0]:
