@@ -1,0 +1,1 @@
+An application that takes in user id and password. If the retyped password is wrong it shows an error or else the user information is saved in a file.
