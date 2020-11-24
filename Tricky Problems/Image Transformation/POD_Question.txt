@@ -1,5 +1,4 @@
 Image Transformation
-There was a spacing problem in the first test case. Now it is corrected. Apologies for that
 
 Digital images are represented as a matrix and each element in the matrix represents the RGB value of a pixel. Given the pixel values of a nXn image. Write a code to transform the image into another image by alternate swap of edge pixels. That is for example, given a 4 X 4 image as follows:
 
