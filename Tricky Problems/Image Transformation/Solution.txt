@@ -1,0 +1,30 @@
+import numpy as np
+
+n = int(input())
+old_matrix = [[int(input()) for i in range(n)] for j in range(n)]
+matrix = np.array(old_matrix)
+
+print(matrix)
+def flip(a):
+    return a.transpose().transpose().transpose()
+
+
+def image_transform(a, start, li):
+    li.append(a[0][0])
+    if a[2][0] != li[0]:
+        x = start
+        while x + 2 < n:
+            a[0][x], a[0][x + 2] = a[0][x + 2], a[0][x]
+            x += 2
+        if x != n:
+            a[0][n - 1], a[2][n - 1] = a[2][n - 1], a[0][n - 1]
+            return image_transform(flip(a), 2, li)
+        else:
+            a[0][n - 2], a[1][n - 1] = a[1][n - 1], a[0][n - 2]
+            return image_transform(flip(a), 1, li)
+    else:
+        return a
+
+
+res = image_transform(matrix, 0, [])
+print(res)
